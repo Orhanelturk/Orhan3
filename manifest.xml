@@ -5,7 +5,7 @@
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="LEVANT"/>
-  <Description DefaultValue="LEVANT Excel Add-in for Solar Projects"/>
+  <Description DefaultValue="A template to get started."/>
   <IconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
   <HighResolutionIconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
@@ -23,11 +23,22 @@
     <Hosts>
       <Host xsi:type="Workbook">
         <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+          <FunctionFile resid="Commands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
                 <Label resid="CommandsGroup.Label"/>
-                <Control xsi:type="Button" size="Large" id="TaskpaneButton">
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TaskpaneButton">
                   <Label resid="TaskpaneButton.Label"/>
                   <Supertip>
                     <Title resid="TaskpaneButton.Label"/>
@@ -51,18 +62,22 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
       </bt:Images>
       <bt:Urls>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="Get started with your LEVANT add-in!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="LEVANT Group"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="LEVANT"/>
       </bt:ShortStrings>
       <bt:LongStrings>
+        <bt:String id="GetStarted.Description" DefaultValue="Your LEVANT add-in loaded successfully. Go to the HOME tab and click the 'LEVANT' button to get started."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open LEVANT Task Pane"/>
       </bt:LongStrings>
     </Resources>
