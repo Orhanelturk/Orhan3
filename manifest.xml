@@ -5,10 +5,13 @@
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="LEVANT"/>
-  <Description DefaultValue="A template to get started."/>
-  <IconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/icon-64.png"/>
+  <Description DefaultValue="LEVANT Excel Add-in for Solar Projects"/>
+  <IconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
+  <HighResolutionIconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <AppDomains>
+    <AppDomain>https://www.contoso.com</AppDomain>
+  </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
