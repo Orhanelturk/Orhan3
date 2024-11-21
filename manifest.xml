@@ -5,7 +5,7 @@
   <ProviderName>LEVANT</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="LEVANT"/>
-  <Description DefaultValue="A template to get started."/>
+  <Description DefaultValue="A comprehensive PV design and simulation tool."/>
   <IconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
   <HighResolutionIconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
@@ -31,65 +31,51 @@
                 <Label resid="GroupProjectInfo.Label"/>
                 <Control xsi:type="Button" id="InputSheetButton">
                   <Label resid="InputSheetButton.Label"/>
+                  <Supertip>
+                    <Title resid="InputSheetButton.Label"/>
+                    <Description resid="InputSheetButton.Description"/>
+                  </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Icon.InputSheet"/>
                   </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>openInputSheet</FunctionName>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
                 <Control xsi:type="Button" id="LoadsButton">
                   <Label resid="LoadsButton.Label"/>
+                  <Supertip>
+                    <Title resid="LoadsButton.Label"/>
+                    <Description resid="LoadsButton.Description"/>
+                  </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Icon.Loads"/>
                   </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>openLoads</FunctionName>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
-                <Control xsi:type="Button" id="ProjectLocationButton">
-                  <Label resid="ProjectLocationButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ProjectLocation"/>
-                  </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>openProjectLocation</FunctionName>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="TariffsButton">
-                  <Label resid="TariffsButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.Tariffs"/>
-                  </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>openTariffs</FunctionName>
-                  </Action>
-                </Control>
+                <!-- Additional Buttons for Group 1 -->
               </Group>
               <!-- Group 2: Solar Resource Data -->
               <Group id="GroupSolarResourceData">
                 <Label resid="GroupSolarResourceData.Label"/>
                 <Control xsi:type="Button" id="ImportWeatherDataButton">
                   <Label resid="ImportWeatherDataButton.Label"/>
+                  <Supertip>
+                    <Title resid="ImportWeatherDataButton.Label"/>
+                    <Description resid="ImportWeatherDataButton.Description"/>
+                  </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Icon.ImportWeatherData"/>
                   </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>importWeatherData</FunctionName>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
-                <Control xsi:type="Button" id="GetFromPVGISButton">
-                  <Label resid="GetFromPVGISButton.Label"/>
-                  <Icon>
-                    <bt:Image size="80" resid="Icon.GetFromPVGIS"/>
-                  </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>getFromPVGIS</FunctionName>
-                  </Action>
-                </Control>
+                <!-- Additional Buttons for Group 2 -->
               </Group>
-              <!-- Additional groups and buttons -->
-              <!-- Add each group and button following the above pattern -->
+              <!-- Additional Groups follow the same pattern -->
             </CustomTab>
           </ExtensionPoint>
         </DesktopFormFactor>
@@ -97,28 +83,29 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <!-- Icons for Project Info -->
         <bt:Image id="Icon.InputSheet" DefaultValue="https://example.com/icons/inputsheet.png"/>
         <bt:Image id="Icon.Loads" DefaultValue="https://example.com/icons/loads.png"/>
-        <bt:Image id="Icon.ProjectLocation" DefaultValue="https://example.com/icons/projectlocation.png"/>
-        <bt:Image id="Icon.Tariffs" DefaultValue="https://example.com/icons/tariffs.png"/>
-        <!-- Icons for Solar Resource Data -->
         <bt:Image id="Icon.ImportWeatherData" DefaultValue="https://example.com/icons/importweatherdata.png"/>
-        <bt:Image id="Icon.GetFromPVGIS" DefaultValue="https://example.com/icons/getfrompvgis.png"/>
-        <!-- Add more icons for other buttons here -->
+        <!-- Add more icons here -->
       </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/taskpane.html"/>
+      </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="CustomTab.Label" DefaultValue="LEVANT PV"/>
         <bt:String id="GroupProjectInfo.Label" DefaultValue="Project Info"/>
         <bt:String id="InputSheetButton.Label" DefaultValue="Input Sheet"/>
         <bt:String id="LoadsButton.Label" DefaultValue="Loads"/>
-        <bt:String id="ProjectLocationButton.Label" DefaultValue="Project Location"/>
-        <bt:String id="TariffsButton.Label" DefaultValue="Tariffs"/>
         <bt:String id="GroupSolarResourceData.Label" DefaultValue="Solar Resource Data"/>
-        <bt:String id="ImportWeatherDataButton.Label" DefaultValue="Import Hourly Weather Data"/>
-        <bt:String id="GetFromPVGISButton.Label" DefaultValue="Get From PVGIS"/>
-        <!-- Add labels for additional buttons here -->
+        <bt:String id="ImportWeatherDataButton.Label" DefaultValue="Import Weather Data"/>
+        <!-- Add more short strings here -->
       </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="InputSheetButton.Description" DefaultValue="Open the Input Sheet for project details."/>
+        <bt:String id="LoadsButton.Description" DefaultValue="Manage load inputs for your project."/>
+        <bt:String id="ImportWeatherDataButton.Description" DefaultValue="Import hourly weather data for solar calculations."/>
+        <!-- Add more long strings here -->
+      </bt:LongStrings>
     </Resources>
   </VersionOverrides>
 </OfficeApp>
