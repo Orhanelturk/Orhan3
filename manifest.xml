@@ -8,10 +8,6 @@
   <Description DefaultValue="A template to get started."/>
   <IconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
   <HighResolutionIconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
-  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
-  <AppDomains>
-    <AppDomain>https://www.contoso.com</AppDomain>
-  </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
@@ -23,12 +19,6 @@
     <Hosts>
       <Host xsi:type="Workbook">
         <DesktopFormFactor>
-          <GetStarted>
-            <Title resid="GetStarted.Title"/>
-            <Description resid="GetStarted.Description"/>
-            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
-          </GetStarted>
-          <FunctionFile resid="Commands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
@@ -67,17 +57,13 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with your LEVANT add-in!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="LEVANT Group"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="LEVANT"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your LEVANT add-in loaded successfully. Go to the HOME tab and click the 'LEVANT' button to get started."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open LEVANT Task Pane"/>
       </bt:LongStrings>
     </Resources>
