@@ -72,13 +72,13 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
+        <bt:String id="GetStarted.Title" DefaultValue="Get started with your LEVANT add-in!"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="LEVANT Group"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="LEVANT"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded successfully. Go to the HOME tab and click the 'Show Task Pane' button to get started."/>
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane"/>
+        <bt:String id="GetStarted.Description" DefaultValue="Your LEVANT add-in loaded successfully. Go to the HOME tab and click the 'LEVANT' button to get started."/>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open LEVANT Task Pane"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
