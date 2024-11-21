@@ -4,7 +4,7 @@
   <Version>1.0.0.0</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Orhan21112024"/>
+  <DisplayName DefaultValue="LEVANT PV"/>
   <Description DefaultValue="A template to get started."/>
   <IconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
   <HighResolutionIconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/icon-64.png"/>
