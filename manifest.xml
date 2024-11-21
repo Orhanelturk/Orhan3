@@ -30,7 +30,8 @@
           </GetStarted>
           <FunctionFile resid="Commands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
-            <OfficeTab id="TabHome">
+            <CustomTab id="TabLEVANTPV">
+              <Label resid="CustomTab.Label"/>
               <Group id="CommandsGroup">
                 <Label resid="CommandsGroup.Label"/>
                 <Icon>
@@ -55,7 +56,7 @@
                   </Action>
                 </Control>
               </Group>
-            </OfficeTab>
+            </CustomTab>
           </ExtensionPoint>
         </DesktopFormFactor>
       </Host>
@@ -73,11 +74,12 @@
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your LEVANT add-in!"/>
+        <bt:String id="CustomTab.Label" DefaultValue="LEVANT PV"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="LEVANT Group"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="LEVANT"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your LEVANT add-in loaded successfully. Go to the HOME tab and click the 'LEVANT' button to get started."/>
+        <bt:String id="GetStarted.Description" DefaultValue="Your LEVANT add-in loaded successfully. Go to the LEVANT PV tab and click the 'LEVANT' button to get started."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open LEVANT Task Pane"/>
       </bt:LongStrings>
     </Resources>
