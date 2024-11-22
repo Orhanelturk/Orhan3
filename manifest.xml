@@ -56,7 +56,7 @@
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
-                <!-- New Button -->
+                <!-- New Button for Solar Layout -->
                 <Control xsi:type="Button" id="SolarLayoutButton">
                   <Label resid="SolarLayoutButton.Label"/>
                   <Supertip>
@@ -68,8 +68,9 @@
                     <bt:Image size="32" resid="Icon.32x32"/>
                     <bt:Image size="80" resid="Icon.80x80"/>
                   </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>openSolarLayout</FunctionName>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>SolarLayoutPane</TaskpaneId>
+                    <SourceLocation resid="SolarLayout.Url"/>
                   </Action>
                 </Control>
               </Group>
@@ -88,6 +89,7 @@
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
         <bt:Url id="Commands.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/taskpane.html"/>
+        <bt:Url id="SolarLayout.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayout.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your LEVANT add-in!"/>
@@ -101,7 +103,7 @@
         <bt:String id="GetStarted.Description" DefaultValue="Your LEVANT add-in loaded successfully. Go to the LEVANT PV tab and click the 'LEVANT' button to get started."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open LEVANT Task Pane"/>
         <!-- New Button Tooltip -->
-        <bt:String id="SolarLayoutButton.Tooltip" DefaultValue="Open the Solar Layout tool."/>
+        <bt:String id="SolarLayoutButton.Tooltip" DefaultValue="Click to open the Solar Layout tool in a task pane."/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
