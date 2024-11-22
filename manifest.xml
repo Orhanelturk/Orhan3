@@ -27,11 +27,12 @@
         <DesktopFormFactor>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <CustomTab id="TabLEVANTPV">
-              <!-- Remove the misplaced Label element -->
-              
               <!-- Group 1: Project Info -->
               <Group id="GroupProjectInfo">
                 <Label resid="GroupProjectInfo.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="GroupProjectInfo.Icon"/>
+                </Icon>
                 <Control xsi:type="Button" id="InputSheetButton">
                   <Label resid="InputSheetButton.Label"/>
                   <Action xsi:type="ShowTaskpane">
@@ -61,6 +62,9 @@
               <!-- Group 2: Solar Resource Data -->
               <Group id="GroupSolarResourceData">
                 <Label resid="GroupSolarResourceData.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="GroupSolarResourceData.Icon"/>
+                </Icon>
                 <Control xsi:type="Button" id="ImportWeatherDataButton">
                   <Label resid="ImportWeatherDataButton.Label"/>
                   <Action xsi:type="ShowTaskpane">
@@ -78,6 +82,9 @@
               <!-- Group 3: Design -->
               <Group id="GroupDesign">
                 <Label resid="GroupDesign.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="GroupDesign.Icon"/>
+                </Icon>
                 <Control xsi:type="Button" id="SolarLayoutButton">
                   <Label resid="SolarLayoutButton.Label"/>
                   <Action xsi:type="ShowTaskpane">
@@ -98,6 +105,20 @@
                 </Control>
               </Group>
 
+              <!-- Group 4: Simulation -->
+              <Group id="GroupSimulation">
+                <Label resid="GroupSimulation.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="GroupSimulation.Icon"/>
+                </Icon>
+                <Control xsi:type="Button" id="SimulationButton">
+                  <Label resid="SimulationButton.Label"/>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Simulation.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+
               <!-- Add other groups as required -->
 
             </CustomTab>
@@ -106,6 +127,12 @@
       </Host>
     </Hosts>
     <Resources>
+      <bt:Images>
+        <bt:Image id="GroupProjectInfo.Icon" DefaultValue="https://example.com/icons/projectinfo.png"/>
+        <bt:Image id="GroupSolarResourceData.Icon" DefaultValue="https://example.com/icons/solarresource.png"/>
+        <bt:Image id="GroupDesign.Icon" DefaultValue="https://example.com/icons/design.png"/>
+        <bt:Image id="GroupSimulation.Icon" DefaultValue="https://example.com/icons/simulation.png"/>
+      </bt:Images>
       <bt:Urls>
         <bt:Url id="InputSheet.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/InputSheet.html"/>
         <bt:Url id="Loads.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Loads.html"/>
@@ -116,6 +143,7 @@
         <bt:Url id="SolarLayout.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayout.html"/>
         <bt:Url id="ConsumptionVsProduction.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ConsumptionVsProduction.html"/>
         <bt:Url id="ElectricalDesign.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ElectricalDesign.html"/>
+        <bt:Url id="Simulation.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Simulation.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="CustomTab.Label" DefaultValue="LEVANT PV"/>
@@ -131,6 +159,8 @@
         <bt:String id="SolarLayoutButton.Label" DefaultValue="Solar Layout"/>
         <bt:String id="ConsumptionVsProductionButton.Label" DefaultValue="Consumption Vs Production"/>
         <bt:String id="ElectricalDesignButton.Label" DefaultValue="Electrical Design"/>
+        <bt:String id="GroupSimulation.Label" DefaultValue="Simulation"/>
+        <bt:String id="SimulationButton.Label" DefaultValue="Simulation"/>
       </bt:ShortStrings>
     </Resources>
   </VersionOverrides>
