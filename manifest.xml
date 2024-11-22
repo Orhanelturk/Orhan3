@@ -6,8 +6,6 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="LEVANT"/>
   <Description DefaultValue="A comprehensive PV design and simulation tool."/>
-  <IconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
-  <HighResolutionIconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -32,38 +30,14 @@
                 <Label resid="GroupProjectInfo.Label"/>
                 <Control xsi:type="Button" id="InputSheetButton">
                   <Label resid="InputSheetButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.InputSheet"/>
-                  </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="InputSheet.Url"/>
                   </Action>
                 </Control>
                 <Control xsi:type="Button" id="LoadsButton">
                   <Label resid="LoadsButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.Loads"/>
-                  </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="Loads.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="ProjectLocationButton">
-                  <Label resid="ProjectLocationButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ProjectLocation"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ProjectLocation.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="TariffsButton">
-                  <Label resid="TariffsButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.Tariffs"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="Tariffs.Url"/>
                   </Action>
                 </Control>
               </Group>
@@ -73,18 +47,12 @@
                 <Label resid="GroupSolarResourceData.Label"/>
                 <Control xsi:type="Button" id="ImportWeatherDataButton">
                   <Label resid="ImportWeatherDataButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ImportWeatherData"/>
-                  </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="ImportWeatherData.Url"/>
                   </Action>
                 </Control>
                 <Control xsi:type="Button" id="GetFromPVGISButton">
                   <Label resid="GetFromPVGISButton.Label"/>
-                  <Icon>
-                    <bt:Image size="80" resid="Icon.GetFromPVGIS"/>
-                  </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="GetFromPVGIS.Url"/>
                   </Action>
@@ -96,341 +64,39 @@
                 <Label resid="GroupDesign.Label"/>
                 <Control xsi:type="Button" id="SolarLayoutButton">
                   <Label resid="SolarLayoutButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.SolarLayout"/>
-                  </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="SolarLayout.Url"/>
                   </Action>
                 </Control>
-                <Control xsi:type="Button" id="ConsumptionVsProductionButton">
-                  <Label resid="ConsumptionVsProductionButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.ConsumptionVsProduction"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ConsumptionVsProduction.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="ElectricalDesignButton">
-                  <Label resid="ElectricalDesignButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.ElectricalDesign"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ElectricalDesign.Url"/>
-                  </Action>
-                </Control>
               </Group>
 
-              <!-- Group 4: Simulation -->
-              <Group id="GroupSimulation">
-                <Label resid="GroupSimulation.Label"/>
-                <Control xsi:type="Button" id="SimulationButton">
-                  <Label resid="SimulationButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.Simulation"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="Simulation.Url"/>
-                  </Action>
-                </Control>
-              </Group>
+              <!-- Additional Groups Here -->
 
-              <!-- Group 5: Project Costs -->
-              <Group id="GroupProjectCosts">
-                <Label resid="GroupProjectCosts.Label"/>
-                <Control xsi:type="Button" id="CAPEXButton">
-                  <Label resid="CAPEXButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.CAPEX"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="CAPEX.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="OpexButton">
-                  <Label resid="OpexButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.Opex"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="Opex.Url"/>
-                  </Action>
-                </Control>
-              </Group>
-
-              <!-- Group 6: Financial Model -->
-              <Group id="GroupFinancialModel">
-                <Label resid="GroupFinancialModel.Label"/>
-                <Control xsi:type="Button" id="ModelInputsButton">
-                  <Label resid="ModelInputsButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ModelInputs"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ModelInputs.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="FinancialResultsButton">
-                  <Label resid="FinancialResultsButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.FinancialResults"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="FinancialResults.Url"/>
-                  </Action>
-                </Control>
-              </Group>
-
-              <!-- Group 7: Optimization -->
-              <Group id="GroupOptimization">
-                <Label resid="GroupOptimization.Label"/>
-                <Control xsi:type="Button" id="CompareLandsButton">
-                  <Label resid="CompareLandsButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.CompareLands"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="CompareLands.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="CompareComponentsButton">
-                  <Label resid="CompareComponentsButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.CompareComponents"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="CompareComponents.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="CompareCountriesButton">
-                  <Label resid="CompareCountriesButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.CompareCountries"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="CompareCountries.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="OptimizeSolutionButton">
-                  <Label resid="OptimizeSolutionButton.Label"/>
-                  <Icon>
-                    <bt:Image size="32" resid="Icon.OptimizeSolution"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="OptimizeSolution.Url"/>
-                  </Action>
-                </Control>
-              </Group>
-
-              <!-- Group 8: Outputs -->
-              <Group id="GroupOutputs">
-                <Label resid="GroupOutputs.Label"/>
-                <Control xsi:type="Button" id="FinalReportButton">
-                  <Label resid="FinalReportButton.Label"/>
-                  <Icon>
-                    <bt:Image size="80" resid="Icon.FinalReport"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="FinalReport.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="ExportReportPDFButton">
-                  <Label resid="ExportReportPDFButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ExportReportPDF"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ExportReportPDF.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="ExportReportWordButton">
-                  <Label resid="ExportReportWordButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ExportReportWord"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ExportReportWord.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="ExportLayoutPDFButton">
-                  <Label resid="ExportLayoutPDFButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ExportLayoutPDF"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ExportLayoutPDF.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="ExportLayoutDXFButton">
-                  <Label resid="ExportLayoutDXFButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ExportLayoutDXF"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ExportLayoutDXF.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="ExportLayoutKMZButton">
-                  <Label resid="ExportLayoutKMZButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ExportLayoutKMZ"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ExportLayoutKMZ.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="ExportSLDPDFButton">
-                  <Label resid="ExportSLDPDFButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ExportSLDPDF"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ExportSLDPDF.Url"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="ExportSLDDXFButton">
-                  <Label resid="ExportSLDDXFButton.Label"/>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.ExportSLDDXF"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="ExportSLDDXF.Url"/>
-                  </Action>
-                </Control>
-              </Group>
             </CustomTab>
           </ExtensionPoint>
         </DesktopFormFactor>
       </Host>
     </Hosts>
     <Resources>
-      <bt:Images>
-        <!-- Add icons for each button -->
-        <bt:Image id="Icon.InputSheet" DefaultValue="https://example.com/icons/inputsheet.png"/>
-        <bt:Image id="Icon.Loads" DefaultValue="https://example.com/icons/loads.png"/>
-        <bt:Image id="Icon.ProjectLocation" DefaultValue="https://example.com/icons/projectlocation.png"/>
-        <bt:Image id="Icon.Tariffs" DefaultValue="https://example.com/icons/tariffs.png"/>
-        <bt:Image id="Icon.ImportWeatherData" DefaultValue="https://example.com/icons/importweatherdata.png"/>
-        <bt:Image id="Icon.GetFromPVGIS" DefaultValue="https://example.com/icons/getfrompvgis.png"/>
-        <bt:Image id="Icon.SolarLayout" DefaultValue="https://example.com/icons/solarlayout.png"/>
-        <bt:Image id="Icon.ConsumptionVsProduction" DefaultValue="https://example.com/icons/consumptionvsproduction.png"/>
-        <bt:Image id="Icon.ElectricalDesign" DefaultValue="https://example.com/icons/electricaldesign.png"/>
-        <bt:Image id="Icon.Simulation" DefaultValue="https://example.com/icons/simulation.png"/>
-        <bt:Image id="Icon.CAPEX" DefaultValue="https://example.com/icons/capex.png"/>
-        <bt:Image id="Icon.Opex" DefaultValue="https://example.com/icons/opex.png"/>
-        <bt:Image id="Icon.ModelInputs" DefaultValue="https://example.com/icons/modelinputs.png"/>
-        <bt:Image id="Icon.FinancialResults" DefaultValue="https://example.com/icons/financialresults.png"/>
-        <bt:Image id="Icon.CompareLands" DefaultValue="https://example.com/icons/comparelands.png"/>
-        <bt:Image id="Icon.CompareComponents" DefaultValue="https://example.com/icons/comparecomponents.png"/>
-        <bt:Image id="Icon.CompareCountries" DefaultValue="https://example.com/icons/comparecountries.png"/>
-        <bt:Image id="Icon.OptimizeSolution" DefaultValue="https://example.com/icons/optimizesolution.png"/>
-        <bt:Image id="Icon.FinalReport" DefaultValue="https://example.com/icons/finalreport.png"/>
-        <bt:Image id="Icon.ExportReportPDF" DefaultValue="https://example.com/icons/exportreportpdf.png"/>
-        <bt:Image id="Icon.ExportReportWord" DefaultValue="https://example.com/icons/exportreportword.png"/>
-        <bt:Image id="Icon.ExportLayoutPDF" DefaultValue="https://example.com/icons/exportlayoutpdf.png"/>
-        <bt:Image id="Icon.ExportLayoutDXF" DefaultValue="https://example.com/icons/exportlayoutdxf.png"/>
-        <bt:Image id="Icon.ExportLayoutKMZ" DefaultValue="https://example.com/icons/exportlayoutkmz.png"/>
-        <bt:Image id="Icon.ExportSLDPDF" DefaultValue="https://example.com/icons/exportsldpdf.png"/>
-        <bt:Image id="Icon.ExportSLDDXF" DefaultValue="https://example.com/icons/exportslddxf.png"/>
-      </bt:Images>
       <bt:Urls>
-        <!-- Add URLs for each button -->
+        <!-- URLs for Buttons -->
         <bt:Url id="InputSheet.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/InputSheet.html"/>
         <bt:Url id="Loads.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Loads.html"/>
-        <bt:Url id="ProjectLocation.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ProjectLocation.html"/>
-        <bt:Url id="Tariffs.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Tariffs.html"/>
         <bt:Url id="ImportWeatherData.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ImportHourlyweatherdata.html"/>
         <bt:Url id="GetFromPVGIS.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/GetFromPVGIS.html"/>
         <bt:Url id="SolarLayout.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayout.html"/>
-        <bt:Url id="ConsumptionVsProduction.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ConsumptionVsProduction.html"/>
-        <bt:Url id="ElectricalDesign.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ElectricalDesign.html"/>
-        <bt:Url id="Simulation.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Simulation.html"/>
-        <bt:Url id="CAPEX.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/CAPEX.html"/>
-        <bt:Url id="Opex.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Opex.html"/>
-        <bt:Url id="ModelInputs.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Modelinputs.html"/>
-        <bt:Url id="FinancialResults.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/FinancialResults.html"/>
-        <bt:Url id="CompareLands.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/CompareDifferentlands.html"/>
-        <bt:Url id="CompareComponents.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/CompareDifferentComponents.html"/>
-        <bt:Url id="CompareCountries.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/CompareCountries.html"/>
-        <bt:Url id="OptimizeSolution.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/OptimizeSolution.html"/>
-        <bt:Url id="FinalReport.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/FinalReport.html"/>
-        <bt:Url id="ExportReportPDF.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ExportReportPDF.html"/>
-        <bt:Url id="ExportReportWord.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ExportReportWord.html"/>
-        <bt:Url id="ExportLayoutPDF.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ExportLayoutPDF.html"/>
-        <bt:Url id="ExportLayoutDXF.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ExportLayoutDXF.html"/>
-        <bt:Url id="ExportLayoutKMZ.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ExportLayoutKMZ.html"/>
-        <bt:Url id="ExportSLDPDF.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ExportSLDPDF.html"/>
-        <bt:Url id="ExportSLDDXF.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ExportSLDDXF.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <!-- Add Short Strings for labels -->
         <bt:String id="CustomTab.Label" DefaultValue="LEVANT PV"/>
         <bt:String id="GroupProjectInfo.Label" DefaultValue="Project Info"/>
         <bt:String id="InputSheetButton.Label" DefaultValue="Input Sheet"/>
         <bt:String id="LoadsButton.Label" DefaultValue="Loads"/>
-        <bt:String id="ProjectLocationButton.Label" DefaultValue="Project Location"/>
-        <bt:String id="TariffsButton.Label" DefaultValue="Tariffs"/>
         <bt:String id="GroupSolarResourceData.Label" DefaultValue="Solar Resource Data"/>
-        <bt:String id="ImportWeatherDataButton.Label" DefaultValue="Import Hourly Weather Data"/>
+        <bt:String id="ImportWeatherDataButton.Label" DefaultValue="Import Weather Data"/>
         <bt:String id="GetFromPVGISButton.Label" DefaultValue="Get From PVGIS"/>
         <bt:String id="GroupDesign.Label" DefaultValue="Design"/>
         <bt:String id="SolarLayoutButton.Label" DefaultValue="Solar Layout"/>
-        <bt:String id="ConsumptionVsProductionButton.Label" DefaultValue="Consumption Vs Production"/>
-        <bt:String id="ElectricalDesignButton.Label" DefaultValue="Electrical Design"/>
-        <bt:String id="GroupSimulation.Label" DefaultValue="Simulation"/>
-        <bt:String id="SimulationButton.Label" DefaultValue="Simulation"/>
-        <bt:String id="GroupProjectCosts.Label" DefaultValue="Project Costs"/>
-        <bt:String id="CAPEXButton.Label" DefaultValue="CAPEX"/>
-        <bt:String id="OpexButton.Label" DefaultValue="Opex"/>
-        <bt:String id="GroupFinancialModel.Label" DefaultValue="Financial Model"/>
-        <bt:String id="ModelInputsButton.Label" DefaultValue="Model Inputs"/>
-        <bt:String id="FinancialResultsButton.Label" DefaultValue="Financial Results"/>
-        <bt:String id="GroupOptimization.Label" DefaultValue="Optimization"/>
-        <bt:String id="CompareLandsButton.Label" DefaultValue="Compare Different Lands"/>
-        <bt:String id="CompareComponentsButton.Label" DefaultValue="Compare Different Components"/>
-        <bt:String id="CompareCountriesButton.Label" DefaultValue="Compare Countries"/>
-        <bt:String id="OptimizeSolutionButton.Label" DefaultValue="Optimize Solution"/>
-        <bt:String id="GroupOutputs.Label" DefaultValue="Outputs"/>
-        <bt:String id="FinalReportButton.Label" DefaultValue="Final Report"/>
-        <bt:String id="ExportReportPDFButton.Label" DefaultValue="Export Report PDF"/>
-        <bt:String id="ExportReportWordButton.Label" DefaultValue="Export Report Word"/>
-        <bt:String id="ExportLayoutPDFButton.Label" DefaultValue="Export Layout PDF"/>
-        <bt:String id="ExportLayoutDXFButton.Label" DefaultValue="Export Layout DXF"/>
-        <bt:String id="ExportLayoutKMZButton.Label" DefaultValue="Export Layout KMZ"/>
-        <bt:String id="ExportSLDPDFButton.Label" DefaultValue="Export SLD PDF"/>
-        <bt:String id="ExportSLDDXFButton.Label" DefaultValue="Export SLD DXF"/>
       </bt:ShortStrings>
-      <bt:LongStrings>
-        <!-- Add Long Strings for descriptions -->
-        <bt:String id="InputSheetButton.Description" DefaultValue="Open the Input Sheet for project details."/>
-        <bt:String id="LoadsButton.Description" DefaultValue="Manage load inputs for your project."/>
-        <bt:String id="ProjectLocationButton.Description" DefaultValue="Set the project location."/>
-        <bt:String id="TariffsButton.Description" DefaultValue="Define and manage tariffs for the project."/>
-        <bt:String id="ImportWeatherDataButton.Description" DefaultValue="Import hourly weather data for solar calculations."/>
-        <bt:String id="GetFromPVGISButton.Description" DefaultValue="Retrieve data from the PVGIS database."/>
-        <bt:String id="SolarLayoutButton.Description" DefaultValue="Create and manage the solar panel layout."/>
-        <bt:String id="ConsumptionVsProductionButton.Description" DefaultValue="Compare energy consumption and production."/>
-        <bt:String id="ElectricalDesignButton.Description" DefaultValue="Design the electrical system for the project."/>
-        <bt:String id="SimulationButton.Description" DefaultValue="Simulate the energy production and performance."/>
-        <bt:String id="CAPEXButton.Description" DefaultValue="Analyze the capital expenditures for the project."/>
-        <bt:String id="OpexButton.Description" DefaultValue="Evaluate operational expenditures."/>
-        <bt:String id="ModelInputsButton.Description" DefaultValue="Provide inputs for the financial model."/>
-        <bt:String id="FinancialResultsButton.Description" DefaultValue="Review the financial results of the project."/>
-        <bt:String id="CompareLandsButton.Description" DefaultValue="Compare different land options for the project."/>
-        <bt:String id="CompareComponentsButton.Description" DefaultValue="Compare different components for the design."/>
-        <bt:String id="CompareCountriesButton.Description" DefaultValue="Analyze performance in different countries."/>
-        <bt:String id="OptimizeSolutionButton.Description" DefaultValue="Optimize the solution for the project."/>
-        <bt:String id="FinalReportButton.Description" DefaultValue="Generate the final project report."/>
-        <bt:String id="ExportReportPDFButton.Description" DefaultValue="Export the report as a PDF."/>
-        <bt:String id="ExportReportWordButton.Description" DefaultValue="Export the report as a Word document."/>
-        <bt:String id="ExportLayoutPDFButton.Description" DefaultValue="Export the solar layout as a PDF."/>
-        <bt:String id="ExportLayoutDXFButton.Description" DefaultValue="Export the solar layout as a DXF file."/>
-        <bt:String id="ExportLayoutKMZButton.Description" DefaultValue="Export the solar layout as a KMZ file."/>
-        <bt:String id="ExportSLDPDFButton.Description" DefaultValue="Export the single-line diagram as a PDF."/>
-        <bt:String id="ExportSLDDXFButton.Description" DefaultValue="Export the single-line diagram as a DXF file."/>
-      </bt:LongStrings>
     </Resources>
   </VersionOverrides>
 </OfficeApp>
