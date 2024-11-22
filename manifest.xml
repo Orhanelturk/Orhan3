@@ -39,6 +39,7 @@
                   <bt:Image size="32" resid="Icon.32x32"/>
                   <bt:Image size="80" resid="Icon.80x80"/>
                 </Icon>
+                <!-- Existing Button -->
                 <Control xsi:type="Button" id="TaskpaneButton">
                   <Label resid="TaskpaneButton.Label"/>
                   <Supertip>
@@ -55,6 +56,22 @@
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
+                <!-- New Button -->
+                <Control xsi:type="Button" id="SolarLayoutButton">
+                  <Label resid="SolarLayoutButton.Label"/>
+                  <Supertip>
+                    <Title resid="SolarLayoutButton.Label"/>
+                    <Description resid="SolarLayoutButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="SolarLayoutIcon.16x16"/>
+                    <bt:Image size="32" resid="SolarLayoutIcon.32x32"/>
+                    <bt:Image size="80" resid="SolarLayoutIcon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>openSolarLayout</FunctionName>
+                  </Action>
+                </Control>
               </Group>
             </CustomTab>
           </ExtensionPoint>
@@ -66,6 +83,10 @@
         <bt:Image id="Icon.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
         <bt:Image id="Icon.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
         <bt:Image id="Icon.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
+        <!-- New Button Icons -->
+        <bt:Image id="SolarLayoutIcon.16x16" DefaultValue="https://cdn-icons-png.flaticon.com/512/1048/1048310.png"/>
+        <bt:Image id="SolarLayoutIcon.32x32" DefaultValue="https://cdn-icons-png.flaticon.com/512/1048/1048310.png"/>
+        <bt:Image id="SolarLayoutIcon.80x80" DefaultValue="https://cdn-icons-png.flaticon.com/512/1048/1048310.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
@@ -77,10 +98,14 @@
         <bt:String id="CustomTab.Label" DefaultValue="LEVANT PV"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="LEVANT Group"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="LEVANT"/>
+        <!-- New Button Label -->
+        <bt:String id="SolarLayoutButton.Label" DefaultValue="Solar Layout"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Your LEVANT add-in loaded successfully. Go to the LEVANT PV tab and click the 'LEVANT' button to get started."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open LEVANT Task Pane"/>
+        <!-- New Button Tooltip -->
+        <bt:String id="SolarLayoutButton.Tooltip" DefaultValue="Open the Solar Layout tool."/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
