@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
   <Id>cdf19592-a2fc-4b2e-96e8-fcbc050c9b18</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>LEVANT</ProviderName>
@@ -24,7 +28,7 @@
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <CustomTab id="TabLEVANTPV">
               <Label resid="CustomTab.Label"/>
-
+              
               <!-- Group 1: Project Info -->
               <Group id="GroupProjectInfo">
                 <Label resid="GroupProjectInfo.Label"/>
@@ -38,6 +42,18 @@
                   <Label resid="LoadsButton.Label"/>
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="Loads.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="ProjectLocationButton">
+                  <Label resid="ProjectLocationButton.Label"/>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="ProjectLocation.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TariffsButton">
+                  <Label resid="TariffsButton.Label"/>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Tariffs.Url"/>
                   </Action>
                 </Control>
               </Group>
@@ -68,6 +84,18 @@
                     <SourceLocation resid="SolarLayout.Url"/>
                   </Action>
                 </Control>
+                <Control xsi:type="Button" id="ConsumptionVsProductionButton">
+                  <Label resid="ConsumptionVsProductionButton.Label"/>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="ConsumptionVsProduction.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="ElectricalDesignButton">
+                  <Label resid="ElectricalDesignButton.Label"/>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="ElectricalDesign.Url"/>
+                  </Action>
+                </Control>
               </Group>
 
               <!-- Additional Groups Here -->
@@ -79,23 +107,30 @@
     </Hosts>
     <Resources>
       <bt:Urls>
-        <!-- URLs for Buttons -->
         <bt:Url id="InputSheet.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/InputSheet.html"/>
         <bt:Url id="Loads.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Loads.html"/>
+        <bt:Url id="ProjectLocation.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ProjectLocation.html"/>
+        <bt:Url id="Tariffs.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Tariffs.html"/>
         <bt:Url id="ImportWeatherData.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ImportHourlyweatherdata.html"/>
         <bt:Url id="GetFromPVGIS.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/GetFromPVGIS.html"/>
         <bt:Url id="SolarLayout.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayout.html"/>
+        <bt:Url id="ConsumptionVsProduction.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ConsumptionVsProduction.html"/>
+        <bt:Url id="ElectricalDesign.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ElectricalDesign.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="CustomTab.Label" DefaultValue="LEVANT PV"/>
         <bt:String id="GroupProjectInfo.Label" DefaultValue="Project Info"/>
         <bt:String id="InputSheetButton.Label" DefaultValue="Input Sheet"/>
         <bt:String id="LoadsButton.Label" DefaultValue="Loads"/>
+        <bt:String id="ProjectLocationButton.Label" DefaultValue="Project Location"/>
+        <bt:String id="TariffsButton.Label" DefaultValue="Tariffs"/>
         <bt:String id="GroupSolarResourceData.Label" DefaultValue="Solar Resource Data"/>
         <bt:String id="ImportWeatherDataButton.Label" DefaultValue="Import Weather Data"/>
         <bt:String id="GetFromPVGISButton.Label" DefaultValue="Get From PVGIS"/>
         <bt:String id="GroupDesign.Label" DefaultValue="Design"/>
         <bt:String id="SolarLayoutButton.Label" DefaultValue="Solar Layout"/>
+        <bt:String id="ConsumptionVsProductionButton.Label" DefaultValue="Consumption Vs Production"/>
+        <bt:String id="ElectricalDesignButton.Label" DefaultValue="Electrical Design"/>
       </bt:ShortStrings>
     </Resources>
   </VersionOverrides>
