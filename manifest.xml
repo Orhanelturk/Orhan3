@@ -42,9 +42,9 @@
                     <Description resid="TaskpaneButton.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="LEVANTIcon.16x16"/>
-                    <bt:Image size="32" resid="LEVANTIcon.32x32"/>
-                    <bt:Image size="80" resid="LEVANTIcon.80x80"/>
+                    <bt:Image size="16" resid="IconLEVANT.16x16"/>
+                    <bt:Image size="32" resid="IconLEVANT.32x32"/>
+                    <bt:Image size="80" resid="IconLEVANT.80x80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>LEVANTPane</TaskpaneId>
