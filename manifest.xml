@@ -32,9 +32,9 @@
                     <Description resid="TaskpaneButton.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="IconLEVANT.16x16"/>
-                    <bt:Image size="32" resid="IconLEVANT.32x32"/>
-                    <bt:Image size="80" resid="IconLEVANT.80x80"/>
+                    <bt:Image size="16" resid="IconLEVANT"/>
+                    <bt:Image size="32" resid="IconLEVANT"/>
+                    <bt:Image size="80" resid="IconLEVANT"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>LEVANTPane</TaskpaneId>
@@ -49,9 +49,9 @@
                     <Description resid="SolarLayoutButton.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="IconSolarLayout.16x16"/>
-                    <bt:Image size="32" resid="IconSolarLayout.32x32"/>
-                    <bt:Image size="80" resid="IconSolarLayout.80x80"/>
+                    <bt:Image size="16" resid="IconSolarLayout"/>
+                    <bt:Image size="32" resid="IconSolarLayout"/>
+                    <bt:Image size="80" resid="IconSolarLayout"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>SolarLayoutPane</TaskpaneId>
@@ -66,14 +66,10 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <!-- Icons for LEVANT Button -->
-        <bt:Image id="IconLEVANT.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo16.png"/>
-        <bt:Image id="IconLEVANT.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo32.png"/>
-        <bt:Image id="IconLEVANT.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo80.png"/>
-        <!-- Icons for Solar Layout Button -->
-        <bt:Image id="IconSolarLayout.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayout16.png"/>
-        <bt:Image id="IconSolarLayout.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayout32.png"/>
-        <bt:Image id="IconSolarLayout.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayout80.png"/>
+        <!-- Icon for LEVANT Button -->
+        <bt:Image id="IconLEVANT" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
+        <!-- Icon for Solar Layout Button -->
+        <bt:Image id="IconSolarLayout" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayoutIcon.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/commands.html"/>
