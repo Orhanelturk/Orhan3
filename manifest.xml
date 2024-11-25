@@ -105,7 +105,7 @@
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your LEVANT add-in!"/>
         <bt:String id="CustomTab.Label" DefaultValue="LEVANT PV"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="LEVANT Group"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="Project Info"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="LEVANT"/>
         <bt:String id="SolarLayoutButton.Label" DefaultValue="Solar Layout"/>
       </bt:ShortStrings>
