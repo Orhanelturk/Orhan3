@@ -30,7 +30,8 @@
           </GetStarted>
           <FunctionFile resid="Commands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
-            <CustomTab id="TabLEVANTPV">
+            <!-- A. Project Info. Group 1 -->
+            <CustomTab id="ProjectInfo">
               <Label resid="CustomTab.Label"/>
               <Group id="CommandsGroup">
                 <Label resid="CommandsGroup.Label"/>
