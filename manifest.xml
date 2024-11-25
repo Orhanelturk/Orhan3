@@ -48,9 +48,9 @@
                     <Description resid="InputSheet.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="LevantIcon.16x16"/>
-                    <bt:Image size="32" resid="LevantIcon.32x32"/>
-                    <bt:Image size="80" resid="LevantIcon.80x80"/>
+                    <bt:Image size="16" resid="InputsSheet.16x16"/>
+                    <bt:Image size="32" resid="InputsSheet.32x32"/>
+                    <bt:Image size="80" resid="InputsSheet.80x80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>LEVANTPane</TaskpaneId>
@@ -83,9 +83,9 @@
     <Resources>
       <bt:Images>
         <!-- LEVANT Button Icons -->
-        <bt:Image id="LevantIcon.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
-        <bt:Image id="LevantIcon.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
-        <bt:Image id="LevantIcon.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
+        <bt:Image id="InputsSheet.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/InputsSheet16x16.png"/>
+        <bt:Image id="InputsSheet.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/InputsSheet32x32.png"/>
+        <bt:Image id="InputsSheet.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/InputsSheet80x80.png"/>
         
         <!-- Solar Layout Button Icons -->
         <bt:Image id="SolarLayoutIcon.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayoutIcon.png"/>
