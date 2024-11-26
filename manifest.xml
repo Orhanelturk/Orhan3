@@ -4,14 +4,10 @@
   <Version>1.0.0.0</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="LEVANT"/>
-  <Description DefaultValue="A template to get started."/>
+  <DisplayName DefaultValue="PVSheets"/>
+  <Description DefaultValue="PVSheets"/>
   <IconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
   <HighResolutionIconUrl DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
-  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
-  <AppDomains>
-    <AppDomain>https://www.contoso.com</AppDomain>
-  </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
@@ -23,18 +19,13 @@
     <Hosts>
       <Host xsi:type="Workbook">
         <DesktopFormFactor>
-          <GetStarted>
-            <Title resid="GetStarted.Title"/>
-            <Description resid="GetStarted.Description"/>
-            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
-          </GetStarted>
           <FunctionFile resid="Commands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
-            <!-- A. Project Info. Group 1 -->
             <CustomTab id="ProjectInfo">
               <Label resid="CustomTab.Label"/>
-              <Group id="CommandsGroup">
-                <Label resid="CommandsGroup.Label"/>
+              <!-- A. Project Info. Group 1 -->
+              <Group id="ProjectInfo">
+                <Label resid="ProjectInfo.Label"/>
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
                   <bt:Image size="32" resid="Icon.32x32"/>
@@ -48,30 +39,73 @@
                     <Description resid="InputSheet.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="InputsSheet.16x16"/>
-                    <bt:Image size="32" resid="InputsSheet.32x32"/>
-                    <bt:Image size="80" resid="InputsSheet.80x80"/>
+                    <bt:Image size="16" resid="InputSheet.16x16"/>
+                    <bt:Image size="32" resid="InputSheet.32x32"/>
+                    <bt:Image size="80" resid="InputSheet.80x80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>LEVANTPane</TaskpaneId>
-                    <SourceLocation resid="Taskpane.Url"/>
+                    <TaskpaneId>InputSheetPane</TaskpaneId>
+                    <SourceLocation resid="InputSheet.Url"/>
                   </Action>
                 </Control>
-                <!-- Solar Layout Button -->
-                <Control xsi:type="Button" id="SolarLayoutButton">
-                  <Label resid="SolarLayoutButton.Label"/>
+                <!-- Loads -->
+                <Control xsi:type="Button" id="Loads">
+                  <Label resid="Loads.Label"/>
                   <Supertip>
-                    <Title resid="SolarLayoutButton.Label"/>
-                    <Description resid="SolarLayoutButton.Tooltip"/>
+                    <Title resid="Loads.Label"/>
+                    <Description resid="Loads.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="SolarLayoutIcon.16x16"/>
-                    <bt:Image size="32" resid="SolarLayoutIcon.32x32"/>
-                    <bt:Image size="80" resid="SolarLayoutIcon.80x80"/>
+                    <bt:Image size="16" resid="Loads.16x16"/>
+                    <bt:Image size="32" resid="Loads.32x32"/>
+                    <bt:Image size="80" resid="Loads.80x80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>SolarLayoutPane</TaskpaneId>
-                    <SourceLocation resid="SolarLayout.Url"/>
+                    <TaskpaneId>LoadsPane</TaskpaneId>
+                    <SourceLocation resid="Loads.Url"/>
+                  </Action>
+                </Control>
+                <!-- ProjectLocation -->
+                <Control xsi:type="Button" id="ProjectLocation">
+                  <Label resid="ProjectLocation.Label"/>
+                  <Supertip>
+                    <Title resid="ProjectLocation.Label"/>
+                    <Description resid="ProjectLocation.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="ProjectLocation.16x16"/>
+                    <bt:Image size="32" resid="ProjectLocation.32x32"/>
+                    <bt:Image size="80" resid="ProjectLocation.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ProjectLocationPane</TaskpaneId>
+                    <SourceLocation resid="ProjectLocation.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+               <!-- A. Project Info. Group 2 -->
+              <Group id="CommandsGroup1">
+                <Label resid="CommandsGroup1.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+                <!-- Input Sheet -->
+                <Control xsi:type="Button" id="InputSheet">
+                  <Label resid="InputSheet.Label"/>
+                  <Supertip>
+                    <Title resid="InputSheet.Label"/>
+                    <Description resid="InputSheet.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="InputSheet.16x16"/>
+                    <bt:Image size="32" resid="InputSheet.32x32"/>
+                    <bt:Image size="80" resid="InputSheet.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>InputSheetPane</TaskpaneId>
+                    <SourceLocation resid="InputSheet.Url"/>
                   </Action>
                 </Control>
               </Group>
@@ -83,14 +117,19 @@
     <Resources>
       <bt:Images>
         <!-- LEVANT Button Icons -->
-        <bt:Image id="InputsSheet.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/InputsSheet16x16.png"/>
-        <bt:Image id="InputsSheet.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/InputsSheet32x32.png"/>
-        <bt:Image id="InputsSheet.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/InputsSheet80x80.png"/>
+        <bt:Image id="InputSheet.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/InputSheet16x16.png"/>
+        <bt:Image id="InputSheet.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/InputSheet32x32.png"/>
+        <bt:Image id="InputSheet.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/InputSheet80x80.png"/>
         
         <!-- Solar Layout Button Icons -->
-        <bt:Image id="SolarLayoutIcon.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/PVLayout16x16.png"/>
-        <bt:Image id="SolarLayoutIcon.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/PVLayout32x32.png"/>
-        <bt:Image id="SolarLayoutIcon.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/PVLayout80x80.png"/>
+        <bt:Image id="Loads.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/Loads16x16.png"/>
+        <bt:Image id="Loads.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/Loads32x32.png"/>
+        <bt:Image id="Loads.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/Loads80x80.png"/>
+
+        <!-- Project Location Button Icons -->
+        <bt:Image id="ProjectLocation.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/ProjectLocation16x16.png"/>
+        <bt:Image id="ProjectLocation.32x32" DefaultValue="https://orhanelturk.github.io/Orhan3/ProjectLocation32x32.png"/>
+        <bt:Image id="ProjectLocation.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/ProjectLocation80x80.png"/>
         
         <!-- General Icons -->
         <bt:Image id="Icon.16x16" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
@@ -98,13 +137,24 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://orhanelturk.github.io/Orhan3/Levantlogo.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
         <bt:Url id="Commands.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/taskpane.html"/>
-        <bt:Url id="SolarLayout.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayout.html"/>
+        <bt:Url id="InputSheet.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/InputSheet.html"/>
+        <bt:Url id="Loads.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/Loads.html"/>
+        <bt:Url id="ProjectLocation.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/ProjectLocation.html"/>
       </bt:Urls>
-
-
+      <bt:ShortStrings>
+        <bt:String id="CustomTab.Label" DefaultValue="PVSheets"/>
+        <bt:String id="ProjectInfo.Label" DefaultValue="Project Info"/>
+        <bt:String id="CommandsGroup1.Label" DefaultValue="Project Info1"/>
+        <bt:String id="InputSheet.Label" DefaultValue="Inputs Sheet"/>
+        <bt:String id="Loads.Label" DefaultValue="Loads"/>
+        <bt:String id="ProjectLocation.Label" DefaultValue="Project Location"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="InputSheet.Tooltip" DefaultValue="Click to open LEVANT Task Pane"/>
+        <bt:String id="Loads.Tooltip" DefaultValue="Click to open the Solar Layout tool in a task pane."/>
+        <bt:String id="ProjectLocation.Tooltip" DefaultValue="Click to open the Solar Layout tool in a task pane."/>
+      </bt:LongStrings>
     </Resources>
   </VersionOverrides>
 </OfficeApp>
