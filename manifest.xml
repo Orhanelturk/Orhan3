@@ -103,18 +103,8 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/taskpane.html"/>
         <bt:Url id="SolarLayout.Url" DefaultValue="https://orhanelturk.github.io/Orhan3/SolarLayout.html"/>
       </bt:Urls>
-      <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with your LEVANT add-in!"/>
-        <bt:String id="CustomTab.Label" DefaultValue="PVSheets"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Project Info"/>
-        <bt:String id="InputSheet.Label" DefaultValue="Inputs Sheet"/>
-        <bt:String id="SolarLayoutButton.Label" DefaultValue="Solar Layout"/>
-      </bt:ShortStrings>
-      <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your LEVANT add-in loaded successfully. Go to the LEVANT PV tab and click the 'LEVANT' button to get started."/>
-        <bt:String id="InputSheet.Tooltip" DefaultValue="Click to open LEVANT Task Pane"/>
-        <bt:String id="SolarLayoutButton.Tooltip" DefaultValue="Click to open the Solar Layout tool in a task pane."/>
-      </bt:LongStrings>
+
+
     </Resources>
   </VersionOverrides>
 </OfficeApp>
